@@ -1,9 +1,7 @@
-package app1
+package lib1
 
 import (
 	"strconv"
-
-	"github.com/akm/go-dep-examples/lib1"
 )
 
 func AddString(a, b string) (string, error) {
@@ -15,7 +13,7 @@ func AddString(a, b string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	intRet := lib1.Add(inta, intb)
+	intRet := Add(inta, intb)
 	return strconv.Itoa(intRet), nil
 }
 
