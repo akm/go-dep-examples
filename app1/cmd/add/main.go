@@ -19,5 +19,5 @@ func main() {
 }
 
 func init() {
-	println("app1/cmd/cli/main.go init")
+	println("app1/cmd/add/main.go init")
 }
