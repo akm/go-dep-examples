@@ -1,4 +1,4 @@
-package multiply
+package multiplytesthelper
 
 import "fmt"
 

@@ -1,16 +1,16 @@
-package multiply
+package multiplytest
 
 import (
-	"fmt"
 	"testing"
 
+	"app1/logics/multiply"
 	multiplytesthelper "app1/logics/multiply/testhelper"
 )
 
-func TestMultiplyString(t *testing.T) {
+func TestReverse(t *testing.T) {
 	for _, p := range multiplytesthelper.Patterns {
 		t.Run(p.A+"*"+p.B, func(t *testing.T) {
-			actual, err := Multiply(p.A, p.B)
+			actual, err := multiply.Multiply(p.A, p.B)
 			if err != nil {
 				t.Errorf("Multiply(%s, %s) got error: %v", p.A, p.B, err)
 			}
@@ -22,5 +22,5 @@ func TestMultiplyString(t *testing.T) {
 }
 
 func init() {
-	fmt.Println("app1/logics/multiply/multiply_string_test.go init")
+	println("app1/logics/multiply/test/reverse_test.go init")
 }
